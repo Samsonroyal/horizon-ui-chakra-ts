@@ -122,7 +122,7 @@ export default function NFT(props: {
 						}}
 						mt='25px'>
 						<Text fontWeight='700' fontSize='sm' color={textColorBid}>
-							Current Bid: {currentbid}
+							Price: {currentbid}
 						</Text>
 						<Link
 							href={download}
@@ -141,7 +141,7 @@ export default function NFT(props: {
 								borderRadius='70px'
 								px='24px'
 								py='5px'>
-								Place Bid
+								Add to cart
 							</Button>
 						</Link>
 					</Flex>

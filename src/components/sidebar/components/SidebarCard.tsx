@@ -1,5 +1,5 @@
 import { Button, Flex, Image, Link, Text, useColorModeValue } from '@chakra-ui/react';
-import logoWhite from 'assets/img/layout/logoWhite.png';
+import logoWhite from 'assets/img/layout/logoColour.png';
 
 export default function SidebarDocs() {
 	const bgColor = 'linear-gradient(135deg, #868CFF 0%, #4318FF 100%)';
@@ -31,7 +31,7 @@ export default function SidebarDocs() {
 				<Image src={logoWhite} w='40px' h='40px' />
 			</Flex>
 			<Flex direction='column' mb='12px' align='center' justify='center' px='15px' pt='55px'>
-				<Text
+			<Text
 					fontSize={{ base: 'lg', xl: '18px' }}
 					color='white'
 					fontWeight='bold'
@@ -39,13 +39,14 @@ export default function SidebarDocs() {
 					textAlign='center'
 					px='10px'
 					mb='14px'>
-					Upgrade to PRO
+					Experience Peace
 				</Text>
 				<Text fontSize='14px' color={'white'} px='10px' mb='14px' textAlign='center'>
-					Improve your development process and start doing more with Horizon UI PRO!
+					Subscribe to any of our subscription plans and protect your family in emergencies!
 				</Text>
+				
 			</Flex>
-			<Link href='https://horizon-ui.com/pro'>
+			<Link href='https://taasa.app'>
 				<Button
 					bg='whiteAlpha.300'
 					_hover={{ bg: 'whiteAlpha.200' }}
@@ -56,7 +57,7 @@ export default function SidebarDocs() {
 					fontSize='sm'
 					minW='185px'
 					mx='auto'>
-					Upgrade to PRO
+					Download the Taasa App
 				</Button>
 			</Link>
 		</Flex>

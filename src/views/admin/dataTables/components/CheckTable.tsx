@@ -30,7 +30,7 @@ export default function CheckTable(props: { columnsData: any; tableData: any }) 
 		<Card flexDirection='column' w='100%' px='0px' overflowX={{ sm: 'scroll', lg: 'hidden' }}>
 			<Flex px='25px' justify='space-between' mb='20px' align='center'>
 				<Text color={textColor} fontSize='22px' fontWeight='700' lineHeight='100%'>
-					Check Table
+					Revenue 
 				</Text>
 				<Menu />
 			</Flex>
@@ -76,6 +76,22 @@ export default function CheckTable(props: { columnsData: any; tableData: any }) 
 												</Text>
 											</Flex>
 										);
+									} else if (cell.column.Header === 'ASSETS') {
+										data = (
+											<Flex align='center'>
+												<Text me='10px' color={textColor} fontSize='sm' fontWeight='700'>
+													{cell.value} vehicles
+												</Text>
+											</Flex>
+										);
+									} else if (cell.column.Header === 'REVENUE') {
+										data = (
+											<Flex align='center'>
+												<Text me='10px' color={textColor} fontSize='sm' fontWeight='700'>
+												USD	{cell.value} 
+												</Text>
+											</Flex>
+										);
 									} else if (cell.column.Header === 'PROGRESS') {
 										data = (
 											<Flex align='center'>
@@ -83,19 +99,7 @@ export default function CheckTable(props: { columnsData: any; tableData: any }) 
 													{cell.value}%
 												</Text>
 											</Flex>
-										);
-									} else if (cell.column.Header === 'QUANTITY') {
-										data = (
-											<Text color={textColor} fontSize='sm' fontWeight='700'>
-												{cell.value}
-											</Text>
-										);
-									} else if (cell.column.Header === 'DATE') {
-										data = (
-											<Text color={textColor} fontSize='sm' fontWeight='700'>
-												{cell.value}
-											</Text>
-										);
+										);									
 									}
 									return (
 										<Td

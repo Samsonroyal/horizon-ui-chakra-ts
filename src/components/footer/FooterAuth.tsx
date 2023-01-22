@@ -3,8 +3,8 @@
 import { Flex, Link, List, ListItem, Text, useColorModeValue } from '@chakra-ui/react';
 
 export default function Footer() {
-	let textColor = useColorModeValue('gray.400', 'white');
-	let linkColor = useColorModeValue({ base: 'gray.400', lg: 'white' }, 'white');
+	let textColor = useColorModeValue('gray.400', 'gray.400');
+	let linkColor = useColorModeValue({ base: 'gray.500', lg: 'gray.600' }, 'white');
 	return (
 		<Flex
 			zIndex='3'
@@ -30,7 +30,7 @@ export default function Footer() {
 				&copy; {new Date().getFullYear()}
 				<Text as='span' fontWeight='500' ms='4px'>
 					 All Rights Reserved. 
-					<Link mx='3px' color={textColor} href='https://www.simmmple.com' target='_blank' fontWeight='700'>
+					<Link mx='3px' color={textColor} href='https://www.taasa.app' target='_blank' fontWeight='700'>
 						Taasa Analytics
 					</Link>
 				</Text>
@@ -41,7 +41,7 @@ export default function Footer() {
 						base: '20px',
 						md: '44px'
 					}}>
-					<Link fontWeight='500' color={linkColor} href='mailto:hello@simmmple.com'>
+					<Link fontWeight='500' color={linkColor} href='mailto:hello@taasa.app'>
 						Support
 					</Link>
 				</ListItem>
@@ -50,8 +50,8 @@ export default function Footer() {
 						base: '20px',
 						md: '44px'
 					}}>
-					<Link fontWeight='500' color={linkColor} href='https://www.simmmple.com/licenses'>
-						License
+					<Link fontWeight='500' color={linkColor} href='https://www.taasa.com/privacy-policy'>
+						Privacy Policy
 					</Link>
 				</ListItem>
 				<ListItem
@@ -59,12 +59,12 @@ export default function Footer() {
 						base: '20px',
 						md: '44px'
 					}}>
-					<Link fontWeight='500' color={linkColor} href='https://simmmple.com/terms-of-service'>
-						Terms of Use
+					<Link fontWeight='500' color={linkColor} href='https://taasa.com/terms-of-service'>
+						Terms & Conditions
 					</Link>
 				</ListItem>
 				<ListItem>
-					<Link fontWeight='500' color={linkColor} href='https://www.blog.simmmple.com/'>
+					<Link fontWeight='500' color={linkColor} href='https://www.blog.taasa.app/'>
 						Blog
 					</Link>
 				</ListItem>

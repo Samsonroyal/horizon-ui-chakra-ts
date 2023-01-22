@@ -21,10 +21,10 @@ import { SidebarResponsive } from 'components/sidebar/Sidebar';
 import PropTypes from 'prop-types';
 import React from 'react';
 // Assets
-import navImage from 'assets/img/layout/Navbar.png';
+import logoWhite from 'assets/img/layout/logoColour.png';
 import { MdNotificationsNone, MdInfoOutline } from 'react-icons/md';
 import { IoMdMoon, IoMdSunny } from 'react-icons/io';
-import { FaEthereum } from 'react-icons/fa';
+// import { FaEthereum } from 'react-icons/fa';
 import routes from 'routes';
 export default function HeaderLinks(props: { secondary: boolean }) {
 	const { secondary } = props;
@@ -34,10 +34,10 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 	let menuBg = useColorModeValue('white', 'navy.800');
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorBrand = useColorModeValue('brand.700', 'brand.400');
-	const ethColor = useColorModeValue('gray.700', 'white');
+	//const ethColor = useColorModeValue('gray.700', 'white');
 	const borderColor = useColorModeValue('#E6ECFA', 'rgba(135, 140, 189, 0.3)');
 	const ethBg = useColorModeValue('secondaryGray.300', 'navy.900');
-	const ethBox = useColorModeValue('white', 'navy.800');
+	//const ethBox = useColorModeValue('white', 'navy.800');
 	const shadow = useColorModeValue(
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.18)',
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.06)'
@@ -71,16 +71,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 				p='6px'
 				align='center'
 				me='6px'>
-				<Flex align='center' justify='center' bg={ethBox} h='29px' w='29px' borderRadius='30px' me='7px'>
-					<Icon color={ethColor} w='9px' h='14px' as={FaEthereum} />
-				</Flex>
-				<Text w='max-content' color={ethColor} fontSize='sm' fontWeight='700' me='6px'>
-					1,924
-					<Text as='span' display={{ base: 'none', md: 'unset' }}>
-						{' '}
-						ETH
-					</Text>
-				</Text>
+				
 			</Flex>
 			<SidebarResponsive routes={routes} />
 			<Menu>
@@ -107,10 +98,10 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 					</Flex>
 					<Flex flexDirection='column'>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px='0' borderRadius='8px' mb='10px'>
-							<ItemContent info='Horizon UI Dashboard PRO' />
+							<ItemContent info='Taasa Marketplace' />
 						</MenuItem>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px='0' borderRadius='8px' mb='10px'>
-							<ItemContent info='Horizon Design System Free' />
+							<ItemContent info='Taasa Marketplace' />
 						</MenuItem>
 					</Flex>
 				</MenuList>
@@ -130,14 +121,14 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 					mt='22px'
 					minW={{ base: 'unset' }}
 					maxW={{ base: '360px', md: 'unset' }}>
-					<Image src={navImage} borderRadius='16px' mb='28px' />
+					<Image src={logoWhite} borderRadius='16px' mb='28px' />
 					<Flex flexDirection='column'>
-						<Link w='100%' href='https://horizon-ui.com/pro'>
+						<Link w='100%' href='https://taasa.app'>
 							<Button w='100%' h='44px' mb='10px' variant='brand'>
-								Buy Horizon UI PRO
+								Download the Taasa App
 							</Button>
 						</Link>
-						<Link w='100%' href='https://horizon-ui.com/documentation/docs/introduction'>
+						<Link w='100%' href='https://taasa.app/documentation/terms-of-service'>
 							<Button
 								w='100%'
 								h='44px'
@@ -145,12 +136,12 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 								border='1px solid'
 								bg='transparent'
 								borderColor={borderButton}>
-								See Documentation
+								See Terms of Service
 							</Button>
 						</Link>
-						<Link w='100%' href='https://github.com/horizon-ui/horizon-ui-chakra-ts'>
+						<Link w='100%' href='https://taasa.app'>
 							<Button w='100%' h='44px' variant='no-hover' color={textColor} bg='transparent'>
-								Try Horizon Free
+								Check out our website
 							</Button>
 						</Link>
 					</Flex>
@@ -179,7 +170,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 					<Avatar
 						_hover={{ cursor: 'pointer' }}
 						color='white'
-						name='Adela Parkson'
+						name='Moria Nduru'
 						bg='#11047A'
 						size='sm'
 						w='40px'
@@ -198,15 +189,15 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 							fontSize='sm'
 							fontWeight='700'
 							color={textColor}>
-							👋&nbsp; Hey, Adela
+							👋&nbsp; Hello, Moria
 						</Text>
 					</Flex>
 					<Flex flexDirection='column' p='10px'>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} borderRadius='8px' px='14px'>
-							<Text fontSize='sm'>Profile Settings</Text>
+							<Text fontSize='sm'>Profile</Text>
 						</MenuItem>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} borderRadius='8px' px='14px'>
-							<Text fontSize='sm'>Newsletter Settings</Text>
+							<Text fontSize='sm'>Settings</Text>
 						</MenuItem>
 						<MenuItem
 							_hover={{ bg: 'none' }}

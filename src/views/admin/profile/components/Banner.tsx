@@ -1,18 +1,19 @@
 // Chakra imports
-import { Avatar, Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import { Avatar, Box, /**Flex,**/ Text, useColorModeValue } from '@chakra-ui/react';
 import Card from 'components/card/Card';
 
 export default function Banner(props: {
 	banner: string;
 	avatar: string;
 	name: string;
-	job: string;
-	posts: number | string;
+	email: string;
+	/**posts: number | string;
 	followers: number | string;
 	following: number | string;
+	*/
 	[x: string]: any;
 }) {
-	const { banner, avatar, name, job, posts, followers, following, ...rest } = props;
+	const { banner, avatar, name, email, posts, followers, following, ...rest } = props;
 	// Chakra Color Mode
 	const textColorPrimary = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = 'gray.400';
@@ -25,34 +26,9 @@ export default function Banner(props: {
 				{name}
 			</Text>
 			<Text color={textColorSecondary} fontSize='sm'>
-				{job}
-			</Text>
-			<Flex w='max-content' mx='auto' mt='26px'>
-				<Flex mx='auto' me='60px' alignItems='center' flexDirection='column'>
-					<Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-						{posts}
-					</Text>
-					<Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-						Posts
-					</Text>
-				</Flex>
-				<Flex mx='auto' me='60px' alignItems='center' flexDirection='column'>
-					<Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-						{followers}
-					</Text>
-					<Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-						Followers
-					</Text>
-				</Flex>
-				<Flex mx='auto' alignItems='center' flexDirection='column'>
-					<Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-						{following}
-					</Text>
-					<Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-						Following
-					</Text>
-				</Flex>
-			</Flex>
+				{email}
+			</Text>		
+			 
 		</Card>
 	);
 }

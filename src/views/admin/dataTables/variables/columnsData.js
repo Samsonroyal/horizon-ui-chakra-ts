@@ -23,16 +23,16 @@ export const columnsDataCheck = [
     accessor: "name",
   },
   {
+    Header: "ASSETS",
+    accessor: "assets",
+  },  
+  {
+    Header: "REVENUE",
+    accessor: "revenue",
+  },
+  {
     Header: "PROGRESS",
     accessor: "progress",
-  },
-  {
-    Header: "QUANTITY",
-    accessor: "quantity",
-  },
-  {
-    Header: "DATE",
-    accessor: "date",
   },
 ];
 

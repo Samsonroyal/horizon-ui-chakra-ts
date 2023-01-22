@@ -1,18 +1,18 @@
 /*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon UI - v1.1.0
-=========================================================
+   _______    ___           ___       _______       ___
+  |__   __|  / _ \         / _ \     / _ _ __\     / _ \
+     | |    / / \ \       / / \ \    \ \          / / \ \
+     | |   / /___\ \     / /___\ \      \\\      / /___\ \
+     | |  / /     \ \   / /     \ \  __ _ _\ \  / /     \ \
+     |_| /_/       \_\ /_/       \_\ \_______/ /_/       \_\                                                                                                                                                                                                                                                                                                        
+===============================================================
+* taasa analytics - v1.0.0
+===============================================================
 
-* Product Page: https://www.horizon-ui.com/
-* Copyright 2022 Horizon UI (https://www.horizon-ui.com/)
+* Company Page: https://www.taasa.app
+* Copyright 2022 taasa analytics (https://www.taasa.app/)
 
-* Designed and Coded by Simmmple
+* Created by Samson
 
 =========================================================
 
@@ -25,11 +25,11 @@ import { Box, Grid } from '@chakra-ui/react';
 
 // Custom components
 import Banner from 'views/admin/profile/components/Banner';
-import General from 'views/admin/profile/components/General';
-import Notifications from 'views/admin/profile/components/Notifications';
-import Projects from 'views/admin/profile/components/Projects';
-import Storage from 'views/admin/profile/components/Storage';
-import Upload from 'views/admin/profile/components/Upload';
+// import General from 'views/admin/profile/components/General';
+// import Notifications from 'views/admin/profile/components/Notifications';
+// import Projects from 'views/admin/profile/components/Projects';
+// import Storage from 'views/admin/profile/components/Storage';
+// import Upload from 'views/admin/profile/components/Upload';
 
 // Assets
 import banner from 'assets/img/auth/banner.png';
@@ -53,22 +53,13 @@ export default function Overview() {
 					gridArea='1 / 1 / 2 / 2'
 					banner={banner}
 					avatar={avatar}
-					name='Adela Parkson'
-					job='Product Designer'
-					posts='17'
+					name='Moria Nduru'
+					email='moria@taasa.app'
+					/**posts='17'
 					followers='9.7k'
-					following='274'
+					following='274'*/
 				/>
-				<Storage gridArea={{ base: '2 / 1 / 3 / 2', lg: '1 / 2 / 2 / 3' }} used={25.6} total={50} />
-				<Upload
-					gridArea={{
-						base: '3 / 1 / 4 / 2',
-						lg: '1 / 3 / 2 / 4'
-					}}
-					minH={{ base: 'auto', lg: '420px', '2xl': '365px' }}
-					pe='20px'
-					pb={{ base: '100px', lg: '20px' }}
-				/>
+				
 			</Grid>
 			<Grid
 				mb='20px'
@@ -83,25 +74,9 @@ export default function Overview() {
 					'2xl': '1fr'
 				}}
 				gap={{ base: '20px', xl: '20px' }}>
-				<Projects
-					banner={banner}
-					avatar={avatar}
-					name='Adela Parkson'
-					job='Product Designer'
-					posts='17'
-					followers='9.7k'
-					following='274'
-				/>
-				<General gridArea={{ base: '2 / 1 / 3 / 2', lg: '1 / 2 / 2 / 3' }} minH='365px' pe='20px' />
-				<Notifications
-					used={25.6}
-					total={50}
-					gridArea={{
-						base: '3 / 1 / 4 / 2',
-						lg: '2 / 1 / 3 / 3',
-						'2xl': '1 / 3 / 2 / 4'
-					}}
-				/>
+				
+				
+				
 			</Grid>
 		</Box>
 	);

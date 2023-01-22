@@ -28,7 +28,7 @@ export default function Banner() {
 				}}
 				fontWeight='700'
 				lineHeight={{ base: '32px', md: '42px' }}>
-				Discover, collect, and sell extraordinary NFTs
+				Explore, and discover road safety products
 			</Text>
 			<Text
 				fontSize='md'
@@ -44,8 +44,7 @@ export default function Banner() {
 				fontWeight='500'
 				mb='40px'
 				lineHeight='28px'>
-				Enter in this creative world. Discover now the latest NFTs or start creating your own!
-			</Text>
+				Get Immersed in a world of road safety. Discover the latest products designed with your safety in mind			</Text>
 			<Flex align='center'>
 				<Button
 					bg='white'
