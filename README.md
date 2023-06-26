@@ -1,4 +1,4 @@
-# [Taasa Marketplace ⚡️](https://marketplace.taasa.app) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://taasa.app/&text=Sign%20Up%20on%20Taasa%20App%20today%20and%20get%20peace%20of%20mind%%21)
+# [Taasa Marketplace ⚡️](https://marketplace.taasa.app) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://taasa.app/&text=Sign%20Up%20on%20Taasa%20App%20today%20and%20get%20peace%20of%20mind%21)
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
